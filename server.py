@@ -3,7 +3,7 @@ import json
 import requests
 import os
 app = Flask(__name__)
-port = os.environ["PATH"]
+port = int(os.environ["PATH"])
 
 @app.route('/', methods=['POST'])
 def index():
